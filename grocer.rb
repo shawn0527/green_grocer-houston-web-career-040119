@@ -13,7 +13,7 @@ def consolidate_cart(cart)
   # code here
 end
 
-def apply_coupons(cart, coupons)
+def apply_coupons
   result_hash = cart
   cart.each do |food, data|
     if food == coupons(:item) && data[:count] % 2 == 1
